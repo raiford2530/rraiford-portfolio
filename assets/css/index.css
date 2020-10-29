@@ -43,7 +43,7 @@ html {
 
     .navbar-collapse.show{
       z-index: 1;
-      background: rgba(0, 0, 0, 0.267);
+      background: rgba(10, 5, 31, 0.8);
       padding: 10px;
     }
   }
