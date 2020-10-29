@@ -1,0 +1,91 @@
+body,
+html {
+  height: 100%;
+
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(10, 5, 31, 0.5), rgba(10, 5, 31, 0.5)),
+      url("../images/coding.jpg");
+  
+    height: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #greeting {
+    font-weight: 900;
+  }
+
+  @media screen and (max-width: 991px) {
+    #greeting {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+  
+    #headshot {
+      display: block;
+      width: 300px;
+      height: 300px;
+      margin: 50px auto 0 auto;
+    }
+  
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    body {
+      position: relative;
+    }
+    #greeting {
+      text-align: center;
+      font-size: 3rem;
+    }
+  
+    #headshot {
+      display: block;
+      width: 400px;
+      height: 400px;
+      margin: 50px auto 0 auto;
+    }
+  
+    .hero-text {
+      width: 80%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0 15px;
+    }
+  }
+  
+  @media screen and (max-height: 486px) {
+    body,
+    html {
+      height: auto;
+    }
+  
+    .hero-image {
+      height: auto;
+    }
+  
+    .hero-text {
+      position: static;
+      width: 100%;
+      padding: 0 15px;
+      top: 0;
+      left: 0;
+      transform: none;
+      padding: 20px 0;
+    }
+  }
+  
