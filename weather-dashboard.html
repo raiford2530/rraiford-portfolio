@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rashawn's Portfolio Website - Weather Dashboard</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/858613d0ae.js" crossorigin="anonymous"></script>
@@ -16,7 +16,66 @@
 </head>
 
 <body>
-    
+    <div class="container-fluid h-100">
+        <nav class="navbar navbar-expand-sm">
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./mywork.html">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contact</a>
+                    </li>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="section">
+                    <div class="project-heading">
+                        <h1>Weather Dashboard</h1>
+                        <p>A website created to find current weather conditions and the five day weather forecast for a
+                            given city.</p>
+                    </div>
+                    <img src="./assets/images/weather-dashboard.png" class="img-fluid project-img">
+                    <a href="https://raiford2530.github.io/weather-dashboard" target="_blank" class="project-link">Check
+                        It Out Live</a>
+                        <a href="https://www.github.com/raiford2530/weather-dashboard" target="_blank" class="project-link">Github Repo</a>
+                    <div class="tech-aspect">
+                        <h2>Technical Overview</h2>
+                        <p>
+                            The frontend was created using HTML 5 and styled mainly using the Bootstrap framework along
+                            with some custom CSS. The backend uses jQuery to call the OpenWeather API
+                            to retrieve the weather data for the searched city. The page is then populated with
+                            elements dynamically created from the clientside Javascript. The page uses local storage
+                            to store the user's last search so that it persists when the user leaves or refreshes the page.
+                        </p>
+                        <div>
+                            <h2>Technologies</h2>
+                            <ul>
+                                <li>Git</li>
+                                <li>HTML 5</li>
+                                <li>jQuery</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                                <li>Javascript</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
