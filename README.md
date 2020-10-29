@@ -3,6 +3,7 @@
 The purpose of this project was to create a professional responsive portfolio website. Web development technology is contiously changing along with the devices that websites are viewed on so websites need to be designed to be responsive so that they show correctly on these devices. I used bootstrap containers and columns to layout the pages on my website so that the content would fit any device that it is viewed on. The content takes up most of the space in the centered container. As the width of the window decreases, the content resizes to accomodate the window width. The navbar changes to a collapsible toggle once the window is below a certain width.
 
 [Live Portfolio](https://raiford2530.github.io/rraiford-portfolio/)
+[Github Repository](https://www.github.com/raiford2530/rraiford-portfolio/)
 
 ![Home](/assets/images/screenshots/home.png)
 
