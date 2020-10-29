@@ -1,0 +1,14 @@
+#my-work{
+    width: 100%;
+    margin: auto;
+  }
+  
+.project {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .project-img{
+    display: block;
+    margin: auto;
+  }
