@@ -1,48 +1,31 @@
-h1, h2{
-    font-weight: 900;
+h1,
+h2 {
+  font-weight: 900;
 }
 
-.project-heading{
-    margin-bottom: 40px;
+.project-heading {
+  margin-bottom: 40px;
 }
 
-.project-link{
-    display: inline-block;
-    text-decoration: none;
-    background-color: #ab76ca;
-    color: white;
-    padding: 5px;
-    margin-top: 20px;
-    margin-right: 20px;
-    font-weight: bold;
-    border-radius: 5px;;
-  }
-  
-  .project-link:hover{
-    text-decoration: none;
-    color: #fff;
-    background-color: #9839cf;
-  }
+.tech-aspect {
+  padding: 40px 0;
+}
 
-  .tech-aspect{
-      padding: 40px 0;
-  }
+.tech-aspect p {
+  padding: 10px 0 30px 0;
+}
 
-  .tech-aspect p{
-      padding: 10px 0 30px 0;
-  }
+.tech-aspect ul {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
 
-  .tech-aspect ul{
-      margin-top: 20px;
-      padding: 0;
-      list-style: none;
-  }
-
-  .tech-aspect li{
-    display: inline-block;
-    padding: 10px;
-    margin-right: 20px;
-    border-radius: 3px;
-    border: 1px solid  #9839cf;;
-    margin-bottom: 10px;
-  }
+.tech-aspect li {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 3px;
+  border: 1px solid #9839cf;
+  margin-bottom: 10px;
+}

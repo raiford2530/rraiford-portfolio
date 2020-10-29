@@ -46,6 +46,24 @@ html {
     margin-right: 15px;
   }
 
+  .project-link{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ab76ca;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    border-radius: 5px;;
+  }
+  
+  .project-link:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #9839cf;
+  }
+
   @media screen and (max-width: 991px) {
     .section{
         width: 100%;
