@@ -1,0 +1,24 @@
+.section p, #social{
+    text-align: center;
+}
+
+.section p {
+    padding-bottom: 40px;
+}
+
+#email {
+    text-decoration: none;
+    color: #ab76ca;
+    font-weight: bold;
+  }
+  
+  .far,
+  .fas {
+    margin-right: 15px;
+  }
+  
+  .fab {
+    font-size: 5rem;
+    margin-right: 20px;
+    color: purple;
+  }
