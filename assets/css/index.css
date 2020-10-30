@@ -1,103 +1,153 @@
-body,
 html {
-  height: 100%;
-
+  background-image: linear-gradient(rgba(10, 5, 31, 0.5), rgba(10, 5, 31, 0.5)),
+    url("../images/coding.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.hero-image {
-    background-image: linear-gradient(rgba(10, 5, 31, 0.5), rgba(10, 5, 31, 0.5)),
-      url("../images/coding.jpg");
-  
-    height: 100%;
-  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: transparent;
+}
+
+.hero-text {
+  padding: 0 15px;
+  width: 100%;
+}
+
+#greeting {
+  font-weight: 900;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#headshot {
+  display: block;
+  width: 350px;
+  height: 350px;
+  margin: 50px auto 20px auto;
+  border-radius: 50%;
+}
+
+@media (max-height: 588px) {
+  html,
+  body {
+    overflow: auto;
+  }
+  .hero-text {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 575px) and (max-height: 889px) {
+  .hero-text {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-top: 40px !important;
+    margin-bottom: 0 !important;
   }
 
+  #headshot {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 575px) and (min-height: 890px) {
+  .hero-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 576px) and (min-height: 588px) {
+  .hero-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #greeting{
+    font-size: 2.5rem;
+  }
+}
+/* @media screen and (max-width: 991px) {
   #greeting {
-    font-weight: 900;
+    text-align: center;
+    font-size: 2.2rem;
   }
 
-  @media screen and (max-width: 991px) {
-    #greeting {
-      text-align: center;
-      font-size: 2.5rem;
-    }
-  
-    #headshot {
-      display: block;
-      width: 300px;
-      height: 300px;
-      margin: 50px auto 0 auto;
-    }
-  
-    .hero-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      padding: 0 15px;
-    }
-
-    .navbar-collapse.show{
-      z-index: 1;
-      background: rgba(10, 5, 31, 0.8);
-      padding: 10px;
-    }
-  }
-  
-  @media screen and (min-width: 992px) {
-    body {
-      position: relative;
-    }
-    #greeting {
-      text-align: center;
-      font-size: 3rem;
-    }
-  
-    #headshot {
-      display: block;
-      width: 400px;
-      height: 400px;
-      margin: 50px auto 0 auto;
-    }
-  
-    .hero-text {
-      width: 80%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 0 15px;
-    }
-  }
-  
-  @media screen and (max-height: 707px) {
-    body,
-    html {
-      height: 100%;
-    }
-  
-    .hero-image {
-      height: 100%;
-    }
-
-    #headshot{
-      width: 300px;
-      height: 300px;
-    }
-  
-    .hero-text {
-      position: static;
-      width: 100%;
-      padding: 0 15px;
-      top: 0;
-      left: 0;
-      transform: none;
-      padding: 20px 0;
-    }
+  #headshot {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto 0 auto;
   }
 
-  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    position: relative;
+  }
+  #greeting {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  #headshot {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto 0 auto;
+  }
+
+  .hero-text {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-height: 918px){
+  html,body {
+    height: auto;
+  }
+
+  #headshot {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-text {
+    position: static;
+    width: 100%; 
+    top: 0;
+    left: 0;
+    transform: none;
+    padding: 20px 15px;
+  }
+} */
