@@ -1,7 +1,10 @@
+html,body{
+  background: #0a051f;
+}
+
 body{
   font-family: "Noto Sans", sans-serif;
   color: #fff;
-  background: #0a051f;
 }
 
 .nav-link {
