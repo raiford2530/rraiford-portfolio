@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>Rashawn's Portfolio Website - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/858613d0ae.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
@@ -17,37 +16,35 @@
 </head>
 
 <body>
-    <main class="h-100">
-        <div class="container-fluid h-100">
-            <nav class="navbar navbar-expand-sm">
-                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./mywork.html">My Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
-                        </li>
-                </div>
-            </nav>
-            <header class="row h-100">
-                <div class="col-sm-12 hero-text my-auto">
-                    <h1 id="greeting" class="animate__animated animate__fadeInUp">Hello, I'm Rashawn. I'm a fullstack developer.</h1>
-                    <img src="./assets/images/headshot1.jpg" class="img-fluid  animate__animated animate__fadeInUp" id="headshot" alt="Rashawn's Headshot">
-                </div>
-            </header>
+    <nav class="navbar navbar-expand-sm">
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./mywork.html">My Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
         </div>
+    </nav>
+    <main class="container-fluid">
+        <header class="row main-content">
+            <div class="col-sm-12">
+                <h1 class="animate__animated animate__fadeInUp">Hello, I'm Rashawn. I'm a fullstack
+                    developer.</h1>
+            </div>
+        </header>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -56,7 +53,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-    <script src=""></script>
+    <script>
+        $('.container-fluid').css("height", ($('body').outerHeight() - $('.navbar').outerHeight() + "px"));
+        $(window).on('resize', function(){
+            $('.container-fluid').css("height", ($('body').outerHeight() - $('.navbar').outerHeight() + "px"));
+        })
+    </script>
 </body>
 
 </html>
