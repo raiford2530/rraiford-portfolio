@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Eat-Da-Burger</title>
+    <title>BarkMatch</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/858613d0ae.js" crossorigin="anonymous"></script>
@@ -47,18 +47,20 @@
             <div class="col-sm-12">
                 <div class="section animate__animated animate__fadeInUpBig">
                     <div class="project-heading">
-                        <h1>Eat-Da-Burger</h1>
-                        <p>Eat-Da-Burger is a simple web app for users to enter burgers that they want to eat and then indicate when they have eaten the burgers.</p>
+                        <h1>BarkMatch</h1>
+                        <p>BarkMatch is a website that allows users to browse dogs and sign up to walk a dog from a list of dogs uploaded by a dog shelter.</p>
                     </div>
-                    <img src="./assets/images/eat-da-burger.png" class="img-fluid project-img">
-                    <a href="https://rraiford-eat-a-burger.herokuapp.com" target="_blank" class="project-link">Check
+                    <img src="./assets/images/barkmatch.png" class="img-fluid project-img">
+                    <a href="https://vast-river-69240.herokuapp.com/" target="_blank" class="project-link">Check
                         It Out Here</a>
                         <a href="https://www.github.com/raiford2530/burger" target="_blank" class="project-link">Github Repo</a>
                     <div class="tech-aspect">
                         <h2>Technical Overview</h2>
                         <p>
-                            Eat-Da-Burger was created using Node.js. I used the express node package for to create view routes and api routes. For the view routes, I used the express handlebars node package 
-                            to render templates created on the server side. I created an ORM to mediate calls to the MySQL database to create and modify data about the burgers input by the user. 
+                            Barkmatch was created using Node.js and several node packages. The project used the express node package to create the server, view routes, and api routes. The express handlebars node package 
+                            was used to render templates created on the server side with data pulled in from the database. The Sequelize node package was used for all of the queries to the MySql database. We used node NodeMailer
+                            to create and send a confirmation email to a user once they sign up to walk a dog. Authentication was implemented using the Passport node package. All of the styling was done using the Bulma css framework
+                            along with custom css.
                         </p>
                         <div>
                             <h2>Technologies</h2>
@@ -67,10 +69,13 @@
                                 <li>Node.js</li>
                                 <li>jQuery</li>
                                 <li>CSS</li>
-                                <li>Bootstrap</li>
+                                <li>Bulma</li>
                                 <li>Express</li>
                                 <li>Express Handlebars</li>
                                 <li>MySQL</li>
+                                <li>Sequelize</li>
+                                <li>NodeMailer</li>
+                                <li>Passport</li>
                             </ul>
                         </div>
                     </div>
